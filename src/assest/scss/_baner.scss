@@ -1,0 +1,23 @@
+.baner-aria {
+    background: url(../img/banner-bg-1-1.png) right top no-repeat;
+    background-size: cover;
+    padding: 300px 0 130px;
+    position: relative;
+    z-index: 1;
+    &--content{
+        h2{
+            font-size: 60px;
+            line-height: 60px;
+        }
+    }
+    &--text{
+        width: 80%;
+        padding-top: 30px;
+        padding-bottom: 32px;
+    }
+    &--img{
+        position: absolute;
+        top: 210px;
+        right: 0;
+    }
+}

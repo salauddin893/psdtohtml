@@ -1,0 +1,35 @@
+.tools-aria{
+    background: url(../img/tools-aria-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: 280px;
+    padding-bottom: 220px;
+    position: relative;
+    &--img{
+        position: absolute;
+        top: 170px;
+        left: 0;
+    }
+    &--content{
+        &-text{
+            font-size: 22px;
+            padding: 40px 0 30px;
+            line-height: 40px;
+        }
+        &-list{
+            li{
+                list-style: none;
+                font-size: 18px;
+                line-height: 40px;
+                span{
+                    color: $pimary-color;
+                    margin-right: 10px;
+                }
+            }
+        }
+        &-button{
+            padding-top: 50px;
+        }
+    }
+}

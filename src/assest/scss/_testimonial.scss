@@ -1,0 +1,46 @@
+.testimonial-aria{
+    background: url(../img/testi-bg-1-1.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 490px;
+    margin-top: -450px;
+    padding-bottom: 100px;
+    &--content{
+        margin-top: 55px;
+        position: relative;
+        &-text{
+            font-size: 22px;
+            line-height: 50px;
+            padding-top: 35px;
+            padding-bottom: 15px;
+        }
+        &-name{
+            font-size: 20px;
+            color: $pimary-color;
+            font-weight: 600;
+        }
+        &-arrow{
+            position: absolute;
+            bottom: -6px;
+            right: 0;
+            &--left{
+                font-size: 25px;
+                margin-right: 20px;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    color: $pimary-color;
+                }
+            }
+            &--right{
+                font-size: 25px;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    color: $pimary-color;
+                }
+            }
+        }
+    }
+}

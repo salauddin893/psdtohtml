@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $poppins-font;
+    color: $text-color;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.btn.focus, .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.section-title{
+    @extend %section-title;
+}
+
+.box-title{
+    @extend %box-title;
+}
+
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1200px;
+    }
+}

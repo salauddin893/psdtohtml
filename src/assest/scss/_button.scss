@@ -1,0 +1,57 @@
+.btn{
+    font-size: 16px;
+    padding: 15px 50px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-weight: 500;
+    &--white{
+        background-color: #fff;
+        box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.05);
+        color: $pimary-color;
+        transition: .3s;
+        &:hover{
+            background-color: $pimary-color;
+            color: #fff;
+        }
+    }
+    &--pimary{
+        background-color: $pimary-color;
+        color: #fff;
+        transition: .3s;
+        &:hover{
+            background-color: #fff;
+            box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.05);
+            color: $pimary-color;
+        }
+    }
+    &--pricing-one{
+        background-color: #fff;
+        color: $text-color;
+        transition: .3s;
+        &:hover{
+            background-color: #9364d4;
+            box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.05);
+            color: #fff;
+        }
+    }
+    &--pricing-tow{
+        background-color: #fff;
+        color: $text-color;
+        transition: .3s;
+        &:hover{
+            background-color: #ee539b;
+            box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.05);
+            color: #fff;
+        }
+    }
+    &--pricing-three{
+        background-color: #fff;
+        color: $text-color;
+        transition: .3s;
+        &:hover{
+            background-color: #fddd6e;
+            box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.05);
+            color: #fff;
+        }
+    }
+}

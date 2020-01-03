@@ -1,0 +1,94 @@
+.service-aria{
+    padding: 115px 0 100px;
+    &--title{
+        margin-bottom: 20px;
+    }
+    &--box{
+        padding: 50px 40px;
+        box-shadow: 1px 1px 28px -9px #cccc;
+        transition: .3s;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-top: 40px;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            top: -50px;
+            right: -50px;
+            border-radius: 50%;
+            transform: translate(100px, -100px);
+            transition: 1s;
+            opacity: .1;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            bottom: -50px;
+            left: -50px;
+            border-radius: 50%;
+            transform: translate(-100px, 100px);
+            opacity: .1;
+            transition: 1s;
+        }
+        &-icon{
+            font-size: 45px;
+            color: #6ddcd7;
+            display: inline-block;
+            padding-bottom: 20px;
+            &--tow{
+                font-size: 30px;
+                transition: .3s;
+                margin-bottom: -5px;
+                display: block;
+            }
+            &--primary{
+                color: $pimary-color;
+            }
+            &--ping{
+                color: #ef5fa2;
+            }
+            &--orange{
+                color: #fddd6e;
+            }
+        }
+        &-title h4{
+            transition: .3s;
+        }
+        &-text{
+            padding: 30px 0 20px;
+            font-size: 16px;
+            transition: .3s;
+        }
+        
+        &:hover{
+            background-color: #9364d4;
+        }
+        &:hover &-text,
+        &:hover &-icon{
+            color: #fff;
+            &--tow{
+                color: #fff;
+            }
+        }
+        
+        &:hover &-title h4{
+            color: #fff;
+        }
+
+        &:hover{
+            &::after{
+                transform: translate(0px, 0px);
+            }
+            &::before{
+                transform: translate(0px, 0px);
+            }
+        }
+    }
+}

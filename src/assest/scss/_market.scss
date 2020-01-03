@@ -1,0 +1,59 @@
+.market-aria{
+    background: url(../img/01_Home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 200px 0;
+    &--box{
+        display: flex;
+        width: 100%;
+        &-right{
+            position: relative;
+            width: 45%;
+            &--top{
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                background-color: #ef4059;
+                top: 0;
+                right: 0;
+                border-radius: 5px;
+            }
+            &--bottom{
+                position: absolute;
+                width: 120px;
+                height: 120px;
+                background-color: #9364d4;
+                bottom: 30px;
+                left: 30px;
+                border-radius: 5px;
+            }
+        }
+        &-left{
+            position: relative;
+            width: 45%;
+            &--top{
+                position: absolute;
+                width: 120px;
+                height: 120px;
+                background-color: #5dd8d3;
+                top: 30px;
+                right: 30px;
+                border-radius: 5px;
+            }
+            &--bottom{
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                background-color: #fddd6e;
+                bottom: 0;
+                left: 0;
+                border-radius: 5px;
+            }
+        }
+    }
+    &--img{
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
