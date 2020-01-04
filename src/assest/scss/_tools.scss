@@ -10,6 +10,15 @@
         position: absolute;
         top: 170px;
         left: 0;
+        width: 50%;
+        @media #{$lg} {
+            top: 300px;
+        }
+        @media #{$md} {
+            position: relative;
+            width: 100%;
+            top: -15px;
+        }
     }
     &--content{
         &-text{

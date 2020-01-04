@@ -17,9 +17,15 @@
         margin: 40px auto 0;
         &-tow{
             margin-top: 120px;
+            @media #{$md} {
+                margin-top: 40px;
+            }
         }
         &-four{
             margin-top: 120px;
+            @media #{$md} {
+                margin-top: 40px;
+            }
         }
         &-content{
             width: 180px;

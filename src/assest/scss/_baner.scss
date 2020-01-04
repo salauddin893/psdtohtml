@@ -4,20 +4,52 @@
     padding: 300px 0 130px;
     position: relative;
     z-index: 1;
+    @media #{$lg} {
+        padding-top: 200px;
+    }
     &--content{
+        @media #{$md} {
+            text-align: center;
+        }
         h2{
             font-size: 60px;
             line-height: 60px;
+            @media #{$lg} {
+                font-size: 50px;
+            }
+            @media #{$md} {
+                font-size: 60px;
+                line-height: 80px;
+            }
+            @media #{$sm} {
+                font-size: 50px;
+                line-height: 65px;
+            }
         }
     }
     &--text{
         width: 80%;
         padding-top: 30px;
         padding-bottom: 32px;
+        @media #{$md} {
+            width: 100%;
+        }
     }
     &--img{
         position: absolute;
         top: 210px;
         right: 0;
+        width: 65%;
+        @media #{$lg} {
+            width: 60%;
+            top: 250px;
+            right: 20px;
+        }
+        @media #{$md} {
+            position: relative;
+            top: 50px;
+            width: 100%;
+            right: 40px;
+        }
     }
 }

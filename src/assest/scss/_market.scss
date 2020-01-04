@@ -7,6 +7,11 @@
     &--box{
         display: flex;
         width: 100%;
+        @media #{$md} {
+            width: 80%;
+            margin: 0 auto;
+            margin-right: 35px;
+        }
         &-right{
             position: relative;
             width: 45%;
@@ -27,6 +32,10 @@
                 bottom: 30px;
                 left: 30px;
                 border-radius: 5px;
+                @media #{$mobile} {
+                    width: 80px;
+                    height: 80px;
+                }
             }
         }
         &-left{
@@ -40,6 +49,10 @@
                 top: 30px;
                 right: 30px;
                 border-radius: 5px;
+                @media #{$mobile} {
+                    width: 80px;
+                    height: 80px;
+                }
             }
             &--bottom{
                 position: absolute;
@@ -55,5 +68,11 @@
     &--img{
         border-radius: 5px;
         overflow: hidden;
+    }
+    &--content{
+        @media #{$md} {
+            margin-top: 45px;
+            padding-bottom: 160px;
+        }
     }
 }

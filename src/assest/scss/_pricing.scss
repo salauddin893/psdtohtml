@@ -3,6 +3,11 @@
     padding-bottom: 100px;
     &--title{
         margin-bottom: 20px;
+        @media #{$md} {
+            br{
+                display: none;
+            }
+        }
     }
     &--box{
         text-align: center;

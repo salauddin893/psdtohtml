@@ -6,6 +6,14 @@
     padding-top: 490px;
     margin-top: -450px;
     padding-bottom: 100px;
+    &--img{
+        @media #{$lg} {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
     &--content{
         margin-top: 55px;
         position: relative;

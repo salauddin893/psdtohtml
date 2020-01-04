@@ -4,3 +4,11 @@ $roboto-font : 'Roboto', sans-serif;
 $text-color : #666e82;
 $text-color--dark : #2e3d62; 
 $pimary-color: #ff8257;
+
+
+$laptop-lg : 'only screen and (min-width: 1330px) and (max-width: 1450px)';
+$laptop : 'only screen and (min-width: 1200px) and (max-width: 1450px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md : '(max-width: 991px)';
+$sm : '(max-width: 767px)';
+$mobile : '(max-width: 575px)';

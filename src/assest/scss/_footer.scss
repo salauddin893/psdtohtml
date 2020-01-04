@@ -11,6 +11,13 @@
             margin: 0 auto;
             display: flex;
             position: relative;
+            @media #{$md} {
+                width: 80%;
+            }
+            @media #{$mobile} {
+                display: block;
+                text-align: center;
+            }
         }
         &-input{
             width: 100%;
@@ -26,13 +33,20 @@
             top: 50%;
             right: 10px;
             transform: translateY(-50%);
+            @media #{$mobile} {
+                position: relative;
+                transform: translateY(0px);
+                margin-top: 20px;
+            }
         }
     }
     &--main{
         display: flex;
         width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
         &-link{
+            padding: 0 40px;
             &--title{
                 color: $text-color--dark;
                 font-size: 18px;
